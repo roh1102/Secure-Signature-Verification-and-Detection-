@@ -1,20 +1,3 @@
-Instruction to run project
-
-1. open docker and start server process if not running.
-2. open frontend project in command prompt.
-3. start forntend project, run command "npm run start"
-4. open http://localhost:4200 on browser
-
-
-
-
-Instruction to train model
-
-1. open project folder in command prompt
-2. activate environment run command "conda activate signature"
-3. start jupyter notebook run command "jupyter notebook"
-4. execute model notebook.
-
-
-
-change epoch to 100 for better accuracy.
+Secure identity identification is crucial for safeguarding private data and confirming transactions in today's digital environment.  Particularly in banking, legal, and official documentation, signatures continue to be one of the most commonly used forms of identification.  Nevertheless, manual signature verification is laborious, susceptible to counterfeit, and prone to human error.  This study offers a non-intrusive and effective biometric solution by presenting an automated signature verification method that uses deep learning to address these problems.
+To differentiate between real and fake signatures, the system makes use of Siamese Networks, which are neural networks built for similarity comparison.  The model can train efficiently from a small amount of labeled data using a one-shot learning strategy, which makes it appropriate for real-world applications when signature examples are hard to come by.  The network creates feature representations that are used to calculate similarity scores by processing pairs of signature images through identical branches that share weights.  The Euclidean distance between feature vectors is computed via a proprietary Contrastive Loss function, which maximizes it for forged pairs and minimizes it for real pairs.
+In order to facilitate effective training in Jupyter Notebook, the system has a structured data preparation pipeline that arranges real and fake images into a CSV-based dataset.  Following training, it offers real-time verification by classifying test and reference signatures according to how close they are.  In banking, legal, and institutional settings, this method improves accuracy, lowers fraud, and facilitates safe, quick authentication.
